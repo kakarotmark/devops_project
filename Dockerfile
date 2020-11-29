@@ -1,5 +1,4 @@
-
-FROM ubuntu:18.04
-COPY . /app
-RUN make /app
-CMD python /app/app.py
+FROM ubuntu:14.04
+ENV HOME /root
+WORKDIR /root
+CMD ["bash"]
